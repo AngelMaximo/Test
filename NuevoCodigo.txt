@@ -1,2 +1,4 @@
 3e8ad1469c173392f39c487a10e204294e6920f3 commit borrado
 Nueva línea de comando
+Esto es otra prueba para 'ERRORES'
+Esto es otra prueba para 'ERRORES2'
