@@ -1,4 +1,25 @@
-3e8ad1469c173392f39c487a10e204294e6920f3 commit borrado
-Nueva línea de comando
-Esto es otra prueba para 'ERRORES'
-Esto es otra prueba para 'ERRORES2'
+class interfaz:
+    def __init__(self,contenedor):
+
+        self.e1 = Label(contenedor,text='Color',fg='black',bg='white',font=("Comic Sans MS", 30))
+        self.e2 = Button(contenedor,text='Amarillo',fg='black',bg='yellow',command=lambda:self.cambiarColor('yellow','Amarillo'))
+        self.e3 = Button(contenedor,text='Rojo',fg='black',bg='red',command=lambda:self.cambiarColor('red','Rojo'))
+        self.e4 = Button(contenedor,text='Azul',fg='black',bg='blue',command=lambda:self.cambiarColor('blue','Azul'))
+
+        self.e1.grid(column=0,row=0,columnspan=3,sticky="nsew")
+        self.e2.grid(column=0,row=1,sticky='nsew')
+        self.e3.grid(column=1, row=1,sticky='nsew')
+        self.e4.grid(column=2,row=1,sticky='nsew')
+    
+
+Ventana=Tk()
+miInterfaz = interfaz(Ventana)
+Ventana.geometry("400x300")
+Ventana.title("Ejercicio")
+Ventana.columnconfigure(0,weight=1)
+Ventana.columnconfigure(1,weight=1)
+Ventana.columnconfigure(2,weight=1)
+Ventana.rowconfigure(0,weight=1)
+Ventana.rowconfigure(1,weight=1)
+Ventana.mainloop()
+
